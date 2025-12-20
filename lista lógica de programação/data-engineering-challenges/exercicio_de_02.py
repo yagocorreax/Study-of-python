@@ -18,6 +18,11 @@ def calcular_media(numeros):
     Esta função deve calcular e retornar a média dos números na lista 'numeros'.
     """
     # Escreva o seu código aqui
+    if len(numeros) == 0:
+        return 0
+    soma = sum(numeros)
+    media = soma / len(numeros)
+    return media
     pass
 
 # --- Testes Unitários ---
