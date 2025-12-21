@@ -29,7 +29,6 @@ def contar_frequencia_palavras(frase):
     palavras = frase.split()
 
     return Counter(palavras)
-
     pass
 
 # --- Testes Unitários ---
