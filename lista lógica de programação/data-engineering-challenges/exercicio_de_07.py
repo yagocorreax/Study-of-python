@@ -18,6 +18,9 @@ def juntar_dicionarios(d1, d2):
     Esta função deve juntar os dicionários d1 e d2.
     """
     # Escreva o seu código aqui
+    novo = d1.copy() #copia o primeiro dicionário evitando modificar o original
+    novo.update(d2) #caso o valor exista nos dois, o conteúdo do parênteses tem prioridade
+    return novo
     pass
 
 # --- Testes Unitários ---
