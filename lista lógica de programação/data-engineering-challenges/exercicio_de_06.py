@@ -17,6 +17,15 @@ def remover_duplicatas(lista):
     Esta função deve remover elementos duplicados de uma lista e retornar uma nova lista.
     """
     # Escreva o seu código aqui
+    vistos = set()
+    resultado= []
+    for elemento in lista:
+        if elemento not in vistos:
+            vistos.add(elemento)
+            resultado.append(elemento)
+            
+            
+    return resultado
     pass
 
 # --- Testes Unitários ---
